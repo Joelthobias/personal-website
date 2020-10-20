@@ -13,7 +13,7 @@
   <link rel="stylesheet" href="assets/css/style-starter.css">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<body data-spy="scroll" data-target="#navbarNav" id="acb" class=" is-contact-open ">
+<body data-spy="scroll" data-target="#navbarNav" id="acb" onload="myFunction()" class=" is-contact-open ">
 <!-- header -->
 <header id="asdfg" class=" fixed-top">
   <div class="w3l-header" id="home">
@@ -126,6 +126,7 @@
               <div class="feature-info mt-4">
                 <h3 class="feature-titel mb-2">Web Development</h3>
                                  <p class="feature-text">
+                                   I can help you to make a dynamic website or converting a static website into dynamic with the help of node.js express , Handlebars and MongoDb ( eg. E-commerce website or a Database management Website , etc..)
                                    
                   <br>
                   </p>
@@ -153,100 +154,7 @@
     </div>
   </div>
 </section>
-<!-- LANGUAGES I PLAY  -->
-<!-- <section  class="w3l-services-block-3 pt-5 ">
-  <div class="features-main pb-5 pt-0 text-center">
-    <div class="container pb-lg-3"> <a href=""><p class="ghy">   Languages wich i use </p> </a> 
-      <div class="row features">
-      
 
-               <div class=" col-md-4 feature-grid">
-
-
-            <div class="feature-body service  mx-auto">
-              <div class="feature-img">
-                <span class="fa fa-globe" aria-hidden="true"></span>
-              </div>
-              <div class="feature-info mt-4">
-                <h3 class="feature-titel mb-2">HTML 5</h3>
-                 
-              </div>
-            </div>
-          </a>
-        </div>
-                             <div class=" col-md-4 feature-grid">
-
-
-            <div class="feature-body service  mx-auto">
-              <div class="feature-img">
-                <span class="fa fa-globe" aria-hidden="true"></span>
-              </div>
-              <div class="feature-info mt-4">
-                <h3 class="feature-titel mb-2">Javascript</h3>
-                 
-              </div>
-            </div>
-          </a>
-        </div>
-               <div class=" col-md-4 feature-grid">
-
-            <div class="feature-body service  mx-auto">
-              <div class="feature-img">
-                <i class="fab fa-bootstrap"></i>
-              </div>
-              <div class="feature-info mt-4">
-                <h3 class="feature-titel mb-2">Bootstrap4</h3>
-                 
-              </div>
-            </div>
-          </a>
-        </div>
-               <div class=" col-md-4 feature-grid">
-
-            <div class="feature-body service  mx-auto">
-              <div class="feature-img">
-                <span class="fa fa-globe" aria-hidden="true"></span>
-              </div>
-              <div class="feature-info mt-4">
-                <h3 class="feature-titel mb-2">Node.js</h3>
-                 
-              </div>
-            </div>
-          </a>
-        </div>
-         <div class=" col-md-4 feature-grid">
-
-            <div class="feature-body service  mx-auto">
-              <div class="feature-img">
-                <span class="fa fa-globe" aria-hidden="true"></span>
-              </div>
-              <div class="feature-info mt-4">
-                <h3 class="feature-titel mb-2">Express.js</h3>
-                 
-              </div>
-            </div>
-          </a>
-        </div>
-               <div class=" col-md-4 feature-grid">
-
-
-            <div class="feature-body service  mx-auto">
-              <div class="feature-img">
-                <span class="fa fa-globe" aria-hidden="true"></span>
-              </div>
-              <div class="feature-info mt-4">
-                <h3 class="feature-titel mb-2">Handlebars</h3>
-                 
-              </div>
-            </div>
-          </a>
-        </div>             
-      
-        
-      </div>
-    </div>
-  </div>
-</section> -->
 <!-- ********************** FindMe  ********************** -->
 
 <section class="container pt-5">
@@ -297,7 +205,7 @@
     <div class="container py-lg-3">
         <h6>I'am available for freelance projects.</h6>
         <h3>Let's work together indeed!</h3>
-        <a onclick="document.getElementById('ab').style.visibility='visible'"class=" btn-style btn-primary btn">Get quotes</a>
+        <a onclick="document.getElementById('ab').style.visibility='visible'" class=" btn-style btn-primary btn">Get quotes</a>
         <a onclick="document.getElementById('ab').style.visibility='visible'" class=" mt-3 btn btn-style btn-light ml-2" style="color: #000;">Hire me</a>
     </div>
 </section>
@@ -345,9 +253,17 @@
       <div class="input required email">
         <input type="text" id="email" name="email">
         <label class="label">E-mail</label></div><div class="input required"><textarea id="message" name="message"></textarea><label class="label">Message</label></div><div class="inner-container"><button type="submit" class="the-button submit-button"><span class="button-text">Send Message</span><div class="button-mask"></div></button></div></form></div>
-  <div onclick="document.getElementById('ab').style.visibility='hidden',document.getElementById('acb').style.backgroundColor='#000'" class="close-contact"><span></span><span></span></div></div></div><div class="half-contact is-about"><div class="giga-text">About</div><div class="contact-info"><h3 class="h4 about-me-title">About Me.</h3><h4 class="h5 about-me-subtitle">Interactive Front-end developer.</h4><p class="about-me-text">I'm Joel Joseph C T, a 17-year-old Indian <strong>Freelance Front-end developer</strong>. I'm a weird guy who likes making weird things with web technologies. <br>I like to <strong>resolve</strong> design problems, <strong>create</strong> smart user interface and <strong>imagine</strong> useful interaction, developing rich web experiences &amp;  <strong>web applications</strong>. <br>Actually now i am ready  <strong>for hire</strong>.</p></div></div>
+  <div onclick="document.getElementById('ab').style.visibility='hidden',document.getElementById('acb').style.backgroundColor='#000'" class="close-contact"><span></span><span></span></div></div></div>
+  <div class="half-contact is-about"><div class="giga-text">About</div><div class="contact-info"><h3 class="h4 about-me-title">About Me.</h3><h4 class="h5 about-me-subtitle">Interactive Full-satck developer.</h4><p class="about-me-text">I'm Joel Joseph C T, a 17-year-old Indian <strong>Freelance Full-satck developer</strong>. I'm a weird guy who likes making weird things with web technologies. <br>I like to <strong>resolve</strong> design problems, <strong>create</strong> smart user interface and <strong>imagine</strong> useful interaction, developing rich web experiences &amp;  <strong>web applications</strong>. <br>Actually now i am ready  <strong>for hire</strong>.</p></div></div>
 
 </section>
+<script>
+function myFunction() {
+
+  setTimeout(()=>{ document.getElementById('ab').style.visibility='visible' }, 9000);
+}
+</script>
+</script>
 <script>
   $("#submit-form").submit((e)=>{
       e.preventDefault()
