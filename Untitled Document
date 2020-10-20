@@ -1,0 +1,84 @@
+https://script.google.com/macros/s/AKfycbyjF8HXFxIL8_sRdB3CbD1z-Zj6xNchrRWGmB5DyA/exec
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+ <script>
+        $("#submit-form").submit((e)=>{
+            e.preventDefault()
+            $.ajax({
+                url:"",
+                data:$("#submit-form").serialize(),
+                method:"post",
+                success:function (response){
+                    alert("Form submitted successfully")
+                    window.location.reload()
+                    //window.location.href="https://google.com"
+                },
+                error:function (err){
+                    alert("Something Error")
+    
+                }
+            })
+        })
+    </script>
+
+
+<script>
+  $('#email').blur(function(){
+    var text=$(this).val()
+    if (text.length<10){
+      if(){
+        
+      }
+      else{
+        $('#error').show
+      }
+    }
+    else{
+      $('#error').hide()
+    }
+  })
+</script>
+
+
+
+
+
+
+
+
+
+
+$(document).ready(function(){
+    $('#submitForm').validate({
+        rules:{
+            name:{
+                required:true,
+                minlength:5
+            }
+            email:{
+                required:true,
+                email:true
+            }
+            message:{
+                required:true,
+    
+            }
+        
+        },
+        messages:{
+            name:{
+                required:"please enter your name",
+                minlength:"eneter atleast 5 charecters "
+            }
+            email:{
+                required:"please enter your email"
+            }
+            message:{
+                required:"please enter the message or sugestion"
+            }
+        }
+        
+
+    })
+})
